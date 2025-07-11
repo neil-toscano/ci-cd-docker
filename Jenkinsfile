@@ -6,7 +6,10 @@ node {
 
         checkout scm
     }
-
+    stage('Check Docker') {
+            echo "Verificando Docker..."
+            sh 'docker --version'
+    }
     stage('Build image') {
   
        app = docker.build("NeilToscano/test")
