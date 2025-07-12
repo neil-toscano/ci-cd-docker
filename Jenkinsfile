@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'NeilToscano/test-angular'
+        IMAGE_NAME = 'neiltoscano/testangular'
     }
 
     stages {
